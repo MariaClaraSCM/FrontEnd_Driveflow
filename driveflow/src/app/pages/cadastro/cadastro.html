@@ -1,0 +1,64 @@
+<section class="banner">
+    <div class="home__boxes">
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+    </div>
+
+    <div class="login-overlay">
+<div class="login-card">
+  <div class="lado-direito">
+
+    <h1>Olá {{tipo}}! Crie sua conta</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    @if (tipo === 'aluno') {
+      <app-cadastro-aluno></app-cadastro-aluno>
+    } @else {
+      <app-cadastro-instrutor></app-cadastro-instrutor>
+    }
+
+    <!-- GOOGLE -->
+    <button class="google-btn">
+      <img src="/icons/googleIcon.png" alt="">
+      Entrar com minha conta Google
+    </button>
+
+    <!-- LINK -->
+    <a routerLink="/login" class="link-login">Entrar na minha conta</a>
+
+    <button type="button" class="btn-alternar" (click)="alternarTipo()">
+      {{ 
+        tipo === 'aluno' 
+          ? 'Cadastrar como instrutor' 
+          : 'Cadastrar como aluno' 
+      }}
+    </button>
+  </div>
+  
+</div>
+    </div>
+
+</section>

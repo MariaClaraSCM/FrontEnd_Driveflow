@@ -1,0 +1,71 @@
+<section class="banner">
+    <div class="home__boxes">
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+        <div class="home__box"></div>
+    </div>
+
+    <div class="login-overlay">
+<div class="login-card">
+  <div class="lado-direito">
+
+    <h1>Entre na sua conta</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <form [formGroup]="form">
+
+      <!-- EMAIL -->
+      <label>E-mail</label>
+      <input type="email" placeholder="nome@email.com">
+
+      <!-- SENHA -->
+      <label>Senha</label>
+      <div class="input-icon">
+        <input type="password" formControlName="senha" placeholder="Escolha uma senha segura">
+        <span class="icon">👁️</span>
+      </div>
+
+      <!-- BOTÃO -->
+      <button class="btn-criar" [disabled]="form.invalid">
+        Entrar na minha conta
+      </button>
+
+    </form>
+
+    <!-- GOOGLE -->
+    <button class="google-btn">
+      <img src="/icons/googleIcon.png" alt="">
+      Entrar com minha conta Google
+    </button>
+
+    <!-- LINK -->
+    <a routerLink="/cadastro/aluno" class="link-login">Criar minha conta</a>
+
+  </div>
+  
+</div>
+    </div>
+
+</section>

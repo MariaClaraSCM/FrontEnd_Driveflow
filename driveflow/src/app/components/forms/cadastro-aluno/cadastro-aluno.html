@@ -1,0 +1,42 @@
+    <form [formGroup]="form">
+            <!-- EMAIL -->
+      <label>Nome:</label>
+      <input type="text" placeholder="Seu nome completo ...">
+
+      <label>CPF:</label>
+      <input type="text" formControlName="cpf" maxlength="14" placeholder="Insira somente os numeros do seu CPF ...">
+
+      <label>E-mail:</label>
+      <input type="email" placeholder="nome@email.com">
+
+      <!-- SENHA -->
+      <label>Senha:</label>
+      <div class="input-icon">
+        <input type="password" formControlName="senha" placeholder="Escolha uma senha segura">
+        <span class="icon">👁️</span>
+      </div>
+
+      <!-- CRITÉRIOS -->
+      <ul class="requisitos">
+        <li [class.ok]="temTamanho()">Minimo 8 caracteres</li>
+        <li [class.ok]="temMaiuscula()">1 letra maiuscula</li>
+        <li [class.ok]="temMinuscula()">1 letra minuscula</li>
+        <li [class.ok]="temNumero()">numeros</li>
+        <li [class.ok]="temEspecial()">Caracteres especiais</li>
+      </ul>
+
+      <!-- CONFIRMAR SENHA -->
+      <label>Repita a senha:</label>
+      <div class="input-icon">
+        <input type="password" placeholder="Insira a mesma senha">
+        <span class="icon">👁️</span>
+      </div>
+
+      <!-- TERMOS -->
+      <div class="termos">
+        <input type="checkbox">
+        <span>Concordo com os termos</span>
+      </div>
+
+      <button class="btn-criar">Criar conta como Aluno</button>
+    </form>

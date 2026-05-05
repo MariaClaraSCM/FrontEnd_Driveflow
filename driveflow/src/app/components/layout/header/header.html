@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <picture>
+      <a routerLink="/">
+        <img src="/logos-svg/logo_primary_white.svg" alt="Logo">
+      </a>
+    </picture>
+
+    <ul>
+      <li><a [routerLink]="['/']" fragment="pqExistimos">Porque existimos</a></li>
+      <li><a [routerLink]="['/']" fragment="funcionalidades">Funcionalidades</a></li>
+      <li><a [routerLink]="['/']" fragment="vantagens">Vantagens</a></li>
+      <li><a [routerLink]="['/']" fragment="perFreq">Perguntas frequentes</a></li>
+    </ul>
+
+    <div class="ajusteBtns">
+      <a routerLink="/login">Login</a>
+    
+      <div class="menu-cadastro">
+        <a>Cadastro</a>
+    
+        <div class="submenu">
+          <a routerLink="/cadastro/aluno">Cadastro Aluno</a>
+          <a routerLink="/cadastro/instrutor">Cadastro Instrutor</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
